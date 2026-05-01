@@ -25,27 +25,13 @@ git clone https://github.com/toan-vietanhschool/skill-for-develop.git
 cd skill-for-develop
 ```
 
-### Bước 2: Cài Superpowers skills (project-level)
+### Bước 2: Sử dụng
 
-Skills trong `.claude/skills/` sẽ tự động được Claude Code nhận diện khi bạn mở project.
+Tất cả skills đã được tích hợp sẵn trong `.claude/skills/`. Chỉ cần mở Claude Code trong thư mục project — Claude sẽ tự động nhận diện.
 
 ```bash
-# Đã bao gồm sẵn trong repo - không cần làm gì thêm!
+# Kiểm tra skills đã có sẵn
 ls .claude/skills/
-```
-
-### Bước 3: Cài Everything Claude Code (global)
-
-```bash
-cd everything-claude-code
-npm install --no-audit --no-fund
-bash install.sh --profile developer --target claude
-```
-
-Hoặc dùng Claude Code slash command:
-```
-/plugin install superpowers@claude-plugins-official
-/plugin marketplace add affaan-m/everything-claude-code
 ```
 
 ---
@@ -279,17 +265,8 @@ skill-for-develop/
 │       ├── dispatching-parallel-agents/ ← Chạy agent song song
 │       └── ecc/                         ← 182 ECC sub-skills
 │
-├── everything-claude-code/              ← Source repo ECC
-│   ├── install.sh                       ← Installer (global)
-│   ├── skills/                          ← 182 skills
-│   ├── rules/                           ← 16 rules
-│   └── commands/                        ← 67 commands
-│
-├── superpowers/                         ← Source repo Superpowers
-│   ├── skills/                          ← 14 skills
-│   ├── hooks/                           ← Lifecycle hooks
-│   └── agents/                          ← Agent templates
-│
+├── install.sh                           ← Installer (Linux/Mac)
+├── install.ps1                          ← Installer (Windows)
 ├── README.md                            ← File này
 └── .gitignore
 ```

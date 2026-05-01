@@ -32,7 +32,12 @@
       "Bash(npx --yes gh)",
       "PowerShell(winget install --id GitHub.cli --accept-package-agreements --accept-source-agreements 2>&1)",
       "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); gh auth status)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
