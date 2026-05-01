@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(git --version)",
+      "Bash(git clone *)",
+      "Bash(wait)",
+      "Bash(grep -v \"\\\\.md$\")",
+      "Bash(cp -r /d/base/superpowers/skills/test-driven-development     /d/base/.claude/skills/)",
+      "Bash(cp -r /d/base/superpowers/skills/systematic-debugging        /d/base/.claude/skills/)",
+      "Bash(cp -r /d/base/superpowers/skills/brainstorming               /d/base/.claude/skills/)",
+      "Bash(cp -r /d/base/superpowers/skills/writing-plans               /d/base/.claude/skills/)",
+      "Bash(cp -r /d/base/superpowers/skills/executing-plans             /d/base/.claude/skills/)",
+      "Bash(npm install *)",
+      "Bash(bash install.sh --dry-run)",
+      "Bash(bash install.sh --dry-run --profile default)",
+      "Bash(node -e \"const p = require\\('/d/base/everything-claude-code/manifests/install-profiles.json'\\); console.log\\(Object.keys\\(p\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('D:/base/everything-claude-code/manifests/install-profiles.json'\\); console.log\\(JSON.stringify\\(p, null, 2\\)\\)\")",
+      "Bash(echo \"=== Cấu trúc hoàn chỉnh D:\\\\\\\\base ===\")",
+      "Read(//c/Users/Sev7n Nguyen/.claude/**)",
+      "Bash(bash install.sh --profile developer --target claude)",
+      "Bash(echo \"=== Project-level skills \\(D:\\\\\\\\base\\) ===\")",
+      "Bash(git -C /d/base status)",
+      "Bash(gh auth *)",
+      "Bash(where gh *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" --version)",
+      "Bash(\"/c/Program Files \\(x86\\)/GitHub CLI/gh.exe\" --version)",
+      "Bash(npx --yes gh)",
+      "PowerShell(winget install --id GitHub.cli --accept-package-agreements --accept-source-agreements 2>&1)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); gh auth status)",
+      "Bash(git remote *)"
+    ]
+  }
+}
