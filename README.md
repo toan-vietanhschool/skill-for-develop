@@ -2,17 +2,45 @@
 
 Bộ công cụ skills tổng hợp dành cho **Claude Code** — giúp developer xây dựng dự án fullstack một cách có hệ thống, từ brainstorm ý tưởng đến deploy sản phẩm.
 
-Tích hợp **Top 7 skills phổ biến nhất** từ [Awesome Claude Skills](https://awesome-skills.com/), bao gồm:
+Tích hợp **Top 7 skills phổ biến nhất** từ [Awesome Claude Skills](https://awesome-skills.com/) + **toàn bộ 14 Superpowers skills** + **10 skills vận hành công ty**:
 
-| # | Skill | Stars | Tác giả | Công dụng |
-|---|---|---|---|---|
-| 1 | Everything Claude Code | ★ 157,565 | affaan-m | Plugin toàn diện: 60+ skills, 16 rules, 67 commands |
-| 2 | Test-Driven Development | ★ 154,473 | obra | Vòng lặp RED-GREEN-REFACTOR chuẩn TDD |
-| 3 | Systematic Debugging | ★ 154,473 | obra | Quy trình debug 4 giai đoạn tìm root cause |
-| 4 | Brainstorming | ★ 154,473 | obra | Thiết kế trước khi code theo phong cách Socratic |
-| 5 | Writing Plans | ★ 154,473 | obra | Tạo kế hoạch implementation chi tiết |
-| 6 | Executing Plans | ★ 154,473 | obra | Thực thi kế hoạch có checkpoint |
-| 7 | Parallel Agents | ★ 154,473 | obra | Điều phối nhiều subagent chạy song song |
+### Superpowers Skills (14 skills — obra)
+
+| # | Skill | Công dụng |
+|---|---|---|
+| 1 | Brainstorming | Thiết kế trước khi code theo phong cách Socratic |
+| 2 | Writing Plans | Tạo kế hoạch implementation chi tiết |
+| 3 | Executing Plans | Thực thi kế hoạch có checkpoint |
+| 4 | Test-Driven Development | Vòng lặp RED-GREEN-REFACTOR chuẩn TDD |
+| 5 | Systematic Debugging | Quy trình debug 4 giai đoạn tìm root cause |
+| 6 | Parallel Agents | Điều phối nhiều subagent chạy song song |
+| 7 | Finishing a Development Branch | Hoàn thành branch trước khi merge |
+| 8 | Verification Before Completion | Kiểm tra task trước khi đánh dấu done |
+| 9 | Requesting Code Review | Yêu cầu review code hiệu quả |
+| 10 | Receiving Code Review | Xử lý feedback sau review |
+| 11 | Subagent-Driven Development | Phát triển bằng nhiều sub-agent |
+| 12 | Using Git Worktrees | Làm việc nhiều branch cùng lúc |
+| 13 | Using Superpowers | Hướng dẫn sử dụng hệ thống skills |
+| 14 | Writing Skills | Meta-skill tạo thêm skill mới |
+
+### ECC Skills (182 sub-skills — affaan-m)
+
+Plugin toàn diện: 182 skills, 16 rules, 67 commands cho mọi ngôn ngữ và framework.
+
+### Company Operations Skills (10 skills — custom)
+
+| # | Skill | Phòng ban | Công dụng |
+|---|---|---|---|
+| 1 | Incident Response | DevOps/SRE | Xử lý sự cố production, postmortem |
+| 2 | Infrastructure as Code | DevOps | Terraform/Pulumi/IaC patterns |
+| 3 | Sprint Ops | Management | Sprint planning, retro, velocity tracking |
+| 4 | Engineering Metrics | Management | DORA metrics, cycle time, delivery health |
+| 5 | GDPR Compliance | Legal/Security | Tuân thủ bảo vệ dữ liệu EU |
+| 6 | Contract Templates | Legal | NDA, SLA, MSA, SOW templates |
+| 7 | Hiring Pipeline | HR | Quy trình tuyển dụng kỹ thuật |
+| 8 | Kubernetes Ops | DevOps | Deploy, scale, troubleshoot K8s |
+| 9 | Load Testing | QA | Performance testing với k6/Artillery |
+| 10 | Release Management | Engineering | Versioning, changelog, feature flags |
 
 ---
 
@@ -263,6 +291,24 @@ skill-for-develop/
 │       ├── writing-plans/               ← Viết implementation plan
 │       ├── executing-plans/             ← Thực thi plan
 │       ├── dispatching-parallel-agents/ ← Chạy agent song song
+│       ├── finishing-a-development-branch/
+│       ├── verification-before-completion/
+│       ├── requesting-code-review/
+│       ├── receiving-code-review/
+│       ├── subagent-driven-development/
+│       ├── using-git-worktrees/
+│       ├── using-superpowers/
+│       ├── writing-skills/
+│       ├── incident-response/           ← Xử lý sự cố production
+│       ├── infrastructure-as-code/      ← Terraform/IaC patterns
+│       ├── sprint-ops/                  ← Sprint planning & retro
+│       ├── engineering-metrics/         ← DORA metrics
+│       ├── gdpr-compliance/             ← Bảo vệ dữ liệu EU
+│       ├── contract-templates/          ← NDA, SLA, MSA, SOW
+│       ├── hiring-pipeline/             ← Tuyển dụng kỹ thuật
+│       ├── kubernetes-ops/              ← K8s operations
+│       ├── load-testing/                ← Performance testing
+│       ├── release-management/          ← Versioning & changelog
 │       └── ecc/                         ← 182 ECC sub-skills
 │
 ├── install.sh                           ← Installer (Linux/Mac)
